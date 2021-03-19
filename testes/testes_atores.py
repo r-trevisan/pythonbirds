@@ -311,7 +311,7 @@ class PassaroAmareloTests(PassaroBaseTests):
         passaro_amarelo.colidir_com_chao()
         self.assertEqual(DESTRUIDO, passaro_amarelo.status)
 
-    def test_lancamento_45_graus(self):
+    def teste_lancamento_45_graus(self):
         passaro_amarelo = PassaroAmarelo(1, 1)
         passaro_amarelo.lancar(45, 2)  # passaro lancado a 45 graus no tempo 2 segundos
         self.assert_passaro_posicao(1, 1, ATIVO, passaro_amarelo, 2.0)
